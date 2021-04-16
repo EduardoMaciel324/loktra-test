@@ -1,0 +1,64 @@
+body {
+	background: rgb(149, 147, 147);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+.donation {
+	background-color: #fff;
+}
+
+.donation__background {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 25%;
+	height: 60%;
+	background: #e9d2ff;
+	margin: 20%;
+}
+
+.donation__background:after {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.donation__content {
+	width: 80%;
+	height: 60%;
+	border: solid;
+}
+
+.donation__progress {
+	background: rgba(2, 0, 0, 0.1);
+	border-bottom: solid;
+
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	display: flex;
+	height: 5%;
+	width: 100%;
+}
+
+.donation__progress--value {
+	animation: load 3s normal forwards;
+	background: rgba(255, 0, 0);
+	height: 100%;
+	width: 0;
+}
+
+@keyframes load {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
