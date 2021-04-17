@@ -6,6 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="ico" href="coin.ico" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://unpkg.com/imask"></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+		/>
+
 		<title>Donation</title>
 	</head>
 
@@ -16,7 +23,10 @@
 					<span class="tooltip__text">
 						$167 still needed for this project
 					</span>
-					<div class="donation__progress--value"></div>
+					<div
+						id="donation__progress--value"
+						class="donation__progress--value"
+					></div>
 				</div>
 				<div class="donation__content-text donation__text">
 					<div class="donation__timeleft">
@@ -32,13 +42,12 @@
 							class="donation__content__footer--button donation__content__footer--button-value"
 							type="text"
 							name=""
-							id=""
+							id="donation__input-value"
 							value="50"
 						/>
 						<button
+							id="donation__button-givenow"
 							class="donation__content__footer--button donation__content__footer--button-green"
-							id=""
-							value="Give Now"
 						>
 							Give Now
 						</button>
@@ -49,10 +58,25 @@
 				</div>
 
 				<div class="donation__footer">
-					<button class="donation__footer-button">Save for later</button>
-					<button class="donation__footer-button">Tell your friends</button>
+					<button
+						id="donation__footer-button-saveforlater"
+						class="donation__footer-button"
+					>
+						Save for later
+					</button>
+					<button
+						id="donation__footer-button-tellfriends"
+						class="donation__footer-button"
+					>
+						Tell your friends
+					</button>
 				</div>
 			</div>
 		</div>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/toastify-js"
+		></script>
+		<script src="index.js"></script>
 	</body>
 </html>

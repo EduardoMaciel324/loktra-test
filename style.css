@@ -53,19 +53,9 @@ body {
 }
 
 .donation__progress--value {
-	animation: load 3s normal forwards;
 	background: #ff3b30;
 	height: 100%;
 	width: 0;
-}
-
-@keyframes load {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: 68%;
-	}
 }
 
 .tooltip {
