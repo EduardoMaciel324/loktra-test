@@ -9,7 +9,7 @@ body {
 }
 
 .donation {
-	background-color: #fff;
+	background-color: rgb(211, 211, 211);
 }
 
 .donation__background {
@@ -19,7 +19,7 @@ body {
 	display: flex;
 	width: 25%;
 	height: 60%;
-	background: #e9d2ff;
+	background: #fff;
 	margin: 20%;
 }
 
@@ -33,12 +33,17 @@ body {
 	width: 80%;
 	height: 60%;
 	border: solid;
+	border-width: 0.5px;
+	border-color: #dbdbdb;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 3px 4px #f4f4f4;
 }
 
 .donation__progress {
-	background: rgba(2, 0, 0, 0.1);
+	background: #fafafa;
 	border-bottom: solid;
-
+	border-bottom-color: #dbdbdb;
+	border-bottom-width: 0.5px;
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
@@ -49,7 +54,7 @@ body {
 
 .donation__progress--value {
 	animation: load 3s normal forwards;
-	background: rgba(255, 0, 0);
+	background: #ff3b30;
 	height: 100%;
 	width: 0;
 }
@@ -59,6 +64,85 @@ body {
 		width: 0;
 	}
 	100% {
-		width: 100%;
+		width: 68%;
 	}
+}
+
+.donation__content-text {
+	margin: 5%;
+	height: 90%;
+}
+
+.donation__text {
+	font-family: "Helvetica";
+	font-size: 20px;
+	line-height: 30px;
+	color: #818181;
+	font-weight: 500;
+}
+
+.donation__timeleft {
+	margin-bottom: 10%;
+}
+.donation__text--daysleft {
+	color: #ff3b30;
+	font-weight: 800;
+}
+
+.donation__details {
+	margin-bottom: 10%;
+}
+
+.donation__text--other-donors {
+	font-weight: 800;
+}
+
+.donation__content__footer {
+	height: 25%;
+	width: 100%;
+	display: grid;
+	grid-column-gap: 10%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 80% 10%;
+}
+.donation__content__footer--button {
+	height: 100%;
+	width: 100%;
+}
+.donation__content__footer--button-green {
+	font-weight: bold;
+	color: white;
+	background-color: #00dc33;
+	border-style: solid;
+	border-width: 1px 1px 2px 1px;
+	border-color: #00cd30;
+	border-radius: 5px;
+	font-size: 24px;
+}
+
+.donation__text--link {
+	text-decoration: none;
+	font-style: italic;
+	color: #0094d5;
+}
+.donation__text--link:active {
+	color: #0094d5;
+}
+
+.donation__content__footer--button-value {
+	font-size: x-large;
+}
+
+.donation__footer {
+	height: 20%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 10%;
+}
+
+.donation__footer-button {
+	height: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
 }
