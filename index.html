@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="ico" href="coin.ico" />
-		<link rel="stylesheet" href="style.css" />
-		<script src="https://unpkg.com/imask"></script>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="ico" href="coin.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/imask"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
-		<title>Donation</title>
-	</head>
+    <title>Donation</title>
+  </head>
 
-	<body>
-		<div class="donation donation__background">
-			<div class="donation__content">
-				<header class="donation__progress tooltip">
-					<span class="tooltip__text">
-						$167 still needed for this project
-					</span>
-					<div
-						id="donation__progress--value"
-						class="donation__progress--value"
-					></div>
-				</header>
-
-				<main class="donation__content-text donation__text">
-					<div class="donation__timeleft">
-						<span class="donation__text--daysleft">Only 3 days left</span> to
-						fund this project.
-					</div>
-					<div class="donation__details">
-						Join the <span class="donation__text--other-donors">42</span> who
-						have already supported this project. Every dollar helps.
-					</div>
-					<form class="donation__content__footer">
-						<input
-							class="donation__content__footer--button donation__content__footer--button-value"
-							type="text"
-							name=""
-							id="donation__input-value"
-							value="50"
-						/>
-						<button
-							id="donation__button-givenow"
-							class="donation__content__footer--button donation__content__footer--button-green"
-						>
-							Give Now
-						</button>
-						<div class="donation__text">
-							<a class="donation__text--link" href="">Why give $50?</a>
-						</div>
-					</form>
-				</main>
-
-				<footer class="donation__footer">
-					<button
-						id="donation__footer-button-saveforlater"
-						class="donation__footer-button"
-					>
-						Save for later
-					</button>
-					<button
-						id="donation__footer-button-tellfriends"
-						class="donation__footer-button"
-					>
-						Tell your friends
-					</button>
-				</footer>
-			</div>
-		</div>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/toastify-js"
-		></script>
-		<script src="index.js"></script>
-	</body>
+  <body>
+    <div class="donation donation__background">
+      <section class="donation__content">
+        <header class="donation__progress tooltip">
+          <span class="tooltip__label">
+            $167 still needed for this project
+          </span>
+          <div
+            id="donation__progress--value"
+            class="donation__progress--value"
+          ></div>
+        </header>
+        <main class="donation__description donation__text">
+          <div class="donation__timeleft">
+            <span class="donation__timeleft--daysleft">Only 3 days left</span>
+            to fund this project.
+          </div>
+          <div class="donation__details">
+            Join the
+            <span class="donation__details--other-donors">42</span> who have
+            already supported this project. Every dollar helps.
+          </div>
+          <form class="donation__form">
+            <input
+              class="donation__form--button donation__form--button-value"
+              type="text"
+              name=""
+              id="donation__input-value"
+              value="50"
+            />
+            <button
+              id="donation__button-givenow"
+              class="donation__form--button donation__form--button-green"
+            >
+              Give Now
+            </button>
+            <div class="donation__text">
+              <a class="donation__text--link" href="">Why give $50?</a>
+            </div>
+          </form>
+        </main>
+        <footer class="donation__footer">
+          <button
+            id="donation__footer-button-saveforlater"
+            class="donation__footer-button"
+          >
+            Save for later
+          </button>
+          <button
+            id="donation__footer-button-tellfriends"
+            class="donation__footer-button"
+          >
+            Tell your friends
+          </button>
+        </footer>
+      </section>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
